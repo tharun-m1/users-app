@@ -16,6 +16,7 @@ function Home() {
     const phoneRegex = /^\d{10}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (phoneRegex.test(userId) || emailRegex.test(userId)) {
+      localStorage.setItem("userAppData", userId);
       return navigate("/otp");
     } else {
       return alert("Enter valid Mobile/Email");
