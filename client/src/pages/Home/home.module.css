@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* border: 1px solid red; */
+  height: 100dvh;
+  background-color: rgb(163, 192, 219);
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px;
+}
+.wrapper {
+  /* border: 1px solid red; */
+  padding: 10px 0px;
+}
+.caption {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px 0px;
+  margin-bottom: 5vh;
+}
+.inputContainer {
+  /* border: 1px solid red; */
+  width: 98%;
+  margin: auto;
+}
+.inputContainer input {
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.btnContainer {
+  width: 98%;
+  margin: auto;
+  padding: 15px 0px;
+}
+.btnContainer button {
+  width: 100%;
+  font-size: 1.4rem;
+  /* padding: 15px 0px; */
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(100, 100, 243);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnContainer button > div {
+  /* border: 1px solid red; */
+  padding: 15px 5px;
+}
+.imgContainer {
+  display: flex;
+}
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4vh;
+}
+.options > div {
+  /* border: 1px solid red; */
+  width: calc(50% - 20px);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0px 10px 10px;
+}
+.options > div img {
+  width: 30px;
+  /* border: 1px solid red; */
+}
+/* .options > div > div {
+  border: 1px solid red;
+} */
+.options > div:first-child {
+  border: 1.5px solid #13a242;
+  border-radius: 10px;
+  color: #13a242;
+}
+.options > div:last-child {
+  border: 1.5px solid blue;
+  border-radius: 10px;
+  color: blue;
+}
+.tnc {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 3.5vh 0vh;
+}
+.tnc > span {
+  color: blue;
+}
