@@ -25,13 +25,15 @@
   text-align: center;
 }
 .dataContainer {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 75%;
   margin: auto;
   margin-top: 6vh;
   padding: 10px 0px;
   /* max-height: 40vh; */
   overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
 }
 /* .dataContainer::-webkit-scrollbar {
   display: none;

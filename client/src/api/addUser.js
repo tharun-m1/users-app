@@ -14,3 +14,13 @@ export const addUser = async (userId) => {
     }
   }
 };
+
+export const getData = async () => {
+  try {
+    const response = await axios.get(`${backendBaseUrl}/users`);
+    return response;
+  } catch (err) {
+    console.log(err);
+    throw new Error("Something went wrong try again...");
+  }
+};

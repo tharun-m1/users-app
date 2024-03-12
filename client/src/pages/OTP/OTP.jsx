@@ -64,8 +64,8 @@ function OTP() {
       }
     } catch (err) {
       setLoading(false);
+      localStorage.removeItem("userAppData");
       if (err.status === 409) {
-        localStorage.removeItem("userAppData");
         alert("User already exists.");
         return navigate("/");
       } else {
