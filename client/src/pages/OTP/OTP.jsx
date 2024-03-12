@@ -60,6 +60,10 @@ function OTP() {
           return;
         } else {
           setOtp(value);
+          if (value.length === 4 && value !== "9999") {
+            setOtp("");
+            return alert("Invalid OTP");
+          }
         }
       }
     } catch (err) {

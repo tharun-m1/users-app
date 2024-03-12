@@ -56,3 +56,8 @@
   font-weight: 600;
   margin-top: 5vh;
 }
+@media screen and (min-width: 720px) {
+  .wrapper {
+    width: 40%;
+  }
+}
